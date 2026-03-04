@@ -4,7 +4,7 @@
 [FnNAS](https://fnnas.com/) 是一款基于最新 Linux 内核（Debian 发行版）深度定制的操作系统。它拥有强大的硬件兼容性，完美支持主流 x86 及 Arm64 设备，允许用户自由组装 NAS 并灵活扩展外部存储。现在，你可以轻松将电视盒子的 Android TV 系统替换为 FnNAS，将其变身为一台功能强大的私有数据存储服务器。
 
 **飞牛fnOS**飞牛 ARM 版本正式公测，开启 ARM NAS 新时代！！！
-[![fnOS-ARM官网](https://www.fnnas.com/download-arm)](https://www.fnnas.com/download-arm) 
+[fnOS-ARM官网](https://www.fnnas.com/download-arm) 
 
 
 ## 仓库说明  
