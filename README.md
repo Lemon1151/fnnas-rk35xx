@@ -1,4 +1,4 @@
-![ARM-fnOS Logo](https://github.com/Lemon1151/fnnas-rk35xx/raw/fnnas-rk35xx/ARM-fnOS.png)
+![ARM-fnOS Logo]([https://github.com/Lemon1151/fnnas-rk35xx/raw/fnnas-rk35xx/ARM-fnOS.png](https://github.com/Lemon1151/fnnas-rk35xx/blob/main/ARM-fnOS.png))
 ## fnOS     
 
 [FnNAS](https://fnnas.com/) 是一款基于最新 Linux 内核（Debian 发行版）深度定制的操作系统。它拥有强大的硬件兼容性，完美支持主流 x86 及 Arm64 设备，允许用户自由组装 NAS 并灵活扩展外部存储。现在，你可以轻松将电视盒子的 Android TV 系统替换为 FnNAS，将其变身为一台功能强大的私有数据存储服务器。
