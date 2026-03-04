@@ -19,7 +19,7 @@
 | [FnNAS.OS](https://github.com/Lemon1151/fnnas-rk35xx/releases) | 自定义 | 自定义 | 22 | 从路由器获取 IP |
 
 
-| -------------- | ------- | ------- |
+| -------------- | ------- | ------- |   
 | Device | panther-x2、jp_tvbox、dg-tn3568、dg-nas-lite | [releases](https://github.com/Lemon1151/fnnas-rk35xx/releases) |
 
 
