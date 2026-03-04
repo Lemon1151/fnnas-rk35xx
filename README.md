@@ -17,7 +17,7 @@
 
 | 系统名称        | 默认账号 | 默认密码  | SSH 端口 | IP 地址 |
 | -------------- | ------- | ------- | ------- | ------- |
-| 🛜 [FnNAS.OS](https://github.com/Lemon1151/fnnas-rk35xx/releases) | 自定义 | 自定义 | 22 | 从路由器获取 IP |
+| [FnNAS.OS](https://github.com/Lemon1151/fnnas-rk35xx/releases) | 自定义 | 自定义 | 22 | 从路由器获取 IP |
 
 
 
