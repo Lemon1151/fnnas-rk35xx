@@ -219,17 +219,10 @@
 
 	fan: pwm-fan {
 		compatible = "pwm-fan";
+		#cooling-cells = <2>;
 		pwms = <&pwm0 0 40000 0>;
 		fan-supply = <&dc_12v>;
-		interrupt-parent = <&gpio0>;
-		interrupts = <20 IRQ_TYPE_EDGE_FALLING>;
-		pulses-per-revolution = <2>;
 		cooling-levels = <0 50 100 150 200 255>;
-		rockchip,temp-trips = < 50000   1
-					60000   2
-					65000   3
-					70000   4
-					80000   5 >;
 	};	
 	
 };
@@ -248,6 +241,50 @@
 
 &cpu3 {
 	cpu-supply = <&vdd_cpu>;
+};
+
+&cpu_thermal {
+	trips {
+		cpu_low: cpu-low {
+			temperature = <50000>;
+			hysteresis = <2000>;
+			type = "active";
+		};
+		cpu_warm: cpu-warm {
+			temperature = <60000>;
+			hysteresis = <2000>;
+			type = "active";
+		};
+		cpu_hot: cpu-hot {
+			temperature = <70000>;
+			hysteresis = <2000>;
+			type = "active";
+		};
+		cpu_halt: cpu-halt {
+			temperature = <80000>;
+			hysteresis = <2000>;
+			type = "active";
+		};
+	};
+
+	cooling-maps {
+		map0 {
+			trip = <&cpu_low>;
+			cooling-device = <&fan 0 1>;
+		};
+		map1 {
+			trip = <&cpu_warm>;
+			cooling-device = <&fan 1 2>;
+		};
+		map2 {
+			trip = <&cpu_hot>;
+			cooling-device = <&fan 2 4>;
+		};
+		map3 {
+			trip = <&cpu_halt>;
+			cooling-device = <&fan 4 5>;
+		};
+	};
 };
 
 &gpu {
@@ -652,8 +689,8 @@
 };
 
 &pcie3x2 {
-	pinctrl-names = "default";
-	pinctrl-0 = <&pcie_reset_h>;
+	/delete-property/ pinctrl-names;
+	/delete-property/ pinctrl-0;
 	reset-gpios = <&gpio0 RK_PC6 GPIO_ACTIVE_HIGH>;
 	vpcie3v3-supply = <&vcc3v3_sys>;
 	status = "okay";
