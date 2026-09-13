@@ -182,7 +182,7 @@
 			hysteresis = <2000>;
 			type = "active";
 		};
-		cpu_hall: cpu-hall {
+		cpu_halt: cpu-hall {
 			temperature = <80000>;
 			hysteresis = <2000>;
 			type = "active";
@@ -203,7 +203,7 @@
 			cooling-device = <&fan 2 4>;
 		};
 		map3 {
-			trip = <&cpu_hall>;
+			trip = <&cpu_halt>;
 			cooling-device = <&fan 4 5>;
 		};
 	};
