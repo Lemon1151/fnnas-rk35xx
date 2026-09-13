@@ -125,6 +125,7 @@
 
 	fan: pwm-fan {
 		compatible = "pwm-fan";
+		#cooling-cells = <2>;
 		pwms = <&pwm12 0 40000 0>;
 		fan-supply = <&dc_12v>;
 		//interrupt-parent = <&gpio0>;
